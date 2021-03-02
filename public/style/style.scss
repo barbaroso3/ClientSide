@@ -1,0 +1,118 @@
+@import "_nullstyle";
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(153, 191, 251);
+}
+.wrapper{
+}
+.button{
+    padding: 0px 10px;
+    box-shadow: 3px 3px 5px black;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 10px;
+    &:hover{
+        top: 2px;
+        box-shadow: 1px 1px 5px black;
+    }
+    &:active{
+        background-color: rgb(115, 164, 245);
+        top: 2px;
+        box-shadow: 1px 1px 5px black;
+    }
+}
+.main-title{
+    margin: 0 auto;
+    padding: 5px 0px 10px 0px;
+    background-color: #fff;
+    width: 90%;
+    font-size: 50px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid rgb(61, 61, 61);
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 580px;
+}
+
+.input-bar{
+    border: 2px solid rgb(61, 61, 61);
+    margin: 20px 0px 20px 0px ;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display:flex;
+
+    .input-bar__text{
+        padding: 7px 10px 0px 0px ;
+        flex: 0 1 auto;
+        font-size: 25px;
+    }
+    .input-bar__input{
+        flex: 1 1 auto;
+        display:flex;
+    }
+    .input-bar__write{
+        font-size: 30px;
+        flex: 1 1 auto;
+    }
+    .input-bar__button{
+        margin-left: 10px;
+        flex: 0 1 auto;
+    }
+}
+
+.content__notes-title{
+    padding: 25px;
+    margin: 10 0px 10px 0px;
+    background-color: #fff;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.note-list{
+    background-color: #fff;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+    .note-list__item{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(61, 61, 61);
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .note-list__note{
+        overflow: hidden;
+        margin: 0px 10px 0px 0px;
+        text-align: justify;
+        font-size: 30px;
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .note-list__button{
+        flex: 0 1 auto;
+    }
+
+    .note-list__note-date{
+        line-height: 20px;
+        padding: 10px 0px 0px 0px ;
+        text-align: center;
+        font-size: 15px;
+        color: rgb(165, 165, 165);
+    }
+}
+
