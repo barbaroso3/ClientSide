@@ -23,6 +23,7 @@ body{
     }
 }
 .main-title{
+    min-width: 400px;
     margin: 0 auto;
     padding: 5px 0px 10px 0px;
     background-color: #fff;
@@ -36,7 +37,7 @@ body{
 .content{
     width: 80%;
     margin: 0 auto;
-    min-width: 580px;
+    min-width: 620px;
 }
 
 .input-bar{
